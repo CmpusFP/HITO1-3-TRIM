@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display mb-3">
+                <div id="valor-anterior" class="text-right font-weight-light text-secondary"></div>
+                <div id="valor-actual" class="text-right font-weight-bold h4"></div>
+            </div>
+            <div class="row">
+                <button class="btn btn-secondary col-6" onclick="display.borrarTodo()">C</button>
+                <button class="btn btn-secondary col-3" onclick="display.borrar()">&larr;</button>
+                <button class="btn btn-light col-3 operador" value="dividir">÷</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-light col numero">7</button>
+                <button class="btn btn-light col numero">8</button>
+                <button class="btn btn-light col numero">9</button>
+                <button class="btn btn-light col operador" value="multiplicar">x</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-light col numero">4</button>
+                <button class="btn btn-light col numero">5</button>
+                <button class="btn btn-light col numero">6</button>
+                <button class="btn btn-light col operador" value="restar">-</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-light col numero">1</button>
+                <button class="btn btn-light col numero">2</button>
+                <button class="btn btn-light col numero">3</button>
+                <button class="btn btn-light col operador" value="sumar">+</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-light col-6 numero">0</button>
+                <button class="btn btn-light col numero">.</button>
+                <button class="btn btn-primary col operador" value="igual">=</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-info col operador" value="porcentaje">%</button>
+                <button class="btn btn-info col operador" value="cuadrado">x²</button>
+                <button class="btn btn-info col operador" value="raizCuadrada">√</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
